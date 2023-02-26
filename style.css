@@ -1,0 +1,58 @@
+.viewport {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .flex-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+#splash-screen {
+    position: fixed;
+    top: 50%;
+    left:50%;
+    right: 50%;
+    bottom: 50%;
+    background-color:#FFE5B4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #logo {
+    animation: beat 1s infinite;
+  }
+  
+  @keyframes beat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  
+  /* Media queries for responsive design */
+  @media (min-width: 576px) {
+    #logo {
+      width: 50%; /* set the logo width to 50% on larger screens */
+    }
+  }
+ 
